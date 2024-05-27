@@ -42,3 +42,4 @@ async def root():
 from routes import router as book_router
 app.include_router(book_router, tags=["books"], prefix="/book")
 
+
