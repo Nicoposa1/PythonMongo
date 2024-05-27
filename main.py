@@ -40,4 +40,5 @@ async def root():
 
 # Incluye tu router con un prefijo para la API
 from routes import router as book_router
-app.include_router(book_router, prefix="/api/v1")
+app.include_router(book_router, tags=["books"], prefix="/book")
+
